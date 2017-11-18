@@ -1,0 +1,528 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$main-color: #f5f5f5;
+$bg-logo: #cacac9;
+$blue: #11749e;
+$black: #222222;
+
+
+body {
+	background: #222222;
+	font-family: Verdana;
+	font-size: 16px;
+	color: $main-color;
+	line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+	background: url(../img/Layer96.png) no-repeat center top /cover;
+	overflow: hidden;
+	height: 100vh;
+}
+
+.header-top {
+	border-bottom: 1px solid #626262;
+	height: 110px;
+}
+
+
+.logo p {
+	background: $bg-logo;
+	color: $main-color;
+	display: block;	
+	height: 60px;
+	margin: 0 5px;
+	position: relative;
+	top: 30px;
+	width: 60px;
+	transition: 1s;
+	opacity: 0.9;
+	&:hover{
+		background: #11749e;
+		transition: 1s;
+		opacity: 1;
+	}
+	a {
+		display: block;
+		position: absolute;
+		left: -15px;
+		top: -10px;
+		text-align: center;
+		line-height: 60px;
+		text-decoration: none;
+		width: 60px;
+		height: 60px;
+		background: #11749e;
+		font-size: 30px;
+		transition: 1s;
+		color: $main-color;
+		&:hover{
+			background: $main-color;
+			transition: 1s;
+			color: #11749e;
+		}
+	
+	}
+}
+
+.menu-trigger {
+  display:none;
+  color:#F8ECC2;
+}	
+
+.top-menu {
+	float: right;
+	padding: 0;
+	display: block;
+	margin-top: 50px;
+
+	li {
+		display: inline-block;
+		padding: 0;
+		margin-left: -5px;
+		&:first-child {
+			padding-left: 100px;
+
+		}	
+		a{
+			margin: 0 auto;
+			font-size: 16px;
+			color: $main-color;
+			text-decoration: none;
+			transition: 0.3s;
+			padding: 33px 12px;
+			
+			
+			&:hover{
+				border-bottom: 5px solid $blue;
+				transition: 0.3s;
+				z-index: 10;
+			}
+		}
+	}
+}
+
+.top-social {
+	float: right;
+	margin-top: 46px;
+	display: block;
+	li {
+		display: inline-block;
+		a{
+			text-align: center;
+			font-size: 18px;
+			text-decoration: none;
+			color: $main-color;
+			padding: 0 6px 34px;
+			&:hover{
+				border-bottom: 5px solid $blue;
+				transition: 0.3s;
+				z-index: 10;
+			}
+		}
+
+	}
+}
+
+.main-title {
+	text-align: center;
+	color: $main-color;
+	font-weight: bold;
+	margin-bottom: 5%;
+	h1{
+		text-align: center;
+		letter-spacing: 1px;
+		font-size: 9.5em;
+		text-transform: uppercase;
+		line-height: 2.6;
+		width: auto;
+	}
+	p {
+		margin-bottom: 2.5%;
+		font-weight: 100;
+	}
+	a {
+		border: 1px solid $main-color;
+		opacity: 0.9;
+		padding: 8px 16px;
+		border-radius: 50%;
+		text-decoration: none;
+		font-size: 30px;
+		color: $main-color;
+		text-align: center;
+		transition: 0.3s;
+		&:hover{
+			color: $blue;
+			text-decoration: none;
+			border-color: $blue;
+			transition: 0.3s;
+		}
+		
+	}
+
+}
+
+.blue {
+	overflow: hidden;
+	background: $blue;
+	margin: 0;
+}
+
+.feature {
+	text-align: center;
+	h3 {
+		font-size: 160px;
+		color: #fff;
+		opacity: 0.1;
+		font-weight: 500;
+		
+	}
+	p {
+		position: relative;
+		top: -120px;
+		font-size: 20px;
+		color: $main-color;
+		text-transform: uppercase;
+		z-index: 11;
+	}
+}
+
+.feature-items {
+	text-align: center;
+	padding-bottom: 100px;
+	a{
+		background: #2e85aa;
+		margin: 0 auto;
+		border-radius: 50%;
+		padding: 30px 34px;
+		font-size: 30px;
+		text-decoration: none;
+		border:1px solid #2e85aa;
+		color: $main-color;
+		transition: 0.5s;
+		&:hover{
+			background: $main-color;
+			color: $blue;
+			transition: 0.5s;
+		}
+	}
+	h4 {
+		display: block;
+		margin: 20% 0 10%;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	p{
+		margin: 0 auto;
+		font-size: 10px;
+		line-height: 1.5;
+		font-weight: thin;
+	}
+}
+
+.culture-text {
+	padding: 4% 15% 10%;
+	margin: 0;
+	p{
+		padding-top: 9.6%;
+		font-size: 10px;
+		line-height: 2;
+		font-weight: thin;
+	}
+
+	h5 {
+		padding-top: 2%;
+		text-transform: uppercase;
+		font-weight: bold;
+
+	}
+}
+
+.culture-images {
+	height: 100%;
+}
+.culture-img-2{
+	background: url(../img/culture2.png) no-repeat left top /cover;
+}
+
+.bg-wh{
+	background: $main-color;
+	color: $black;
+}
+
+.culture-img{
+	background: url(../img/culture1.png) no-repeat right top /cover;
+	overflow: hidden;
+}
+
+.blog-text {
+	text-align: center;
+	margin-top: -19px;
+	h3 {
+		font-size: 140px;
+		color: $black;
+		opacity: 0.1;
+		font-weight: 500;
+		
+	}
+	p {
+		position: relative;
+		top: -120px;
+		font-size: 20px;
+		color: $black;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+	h4 {
+		position: relative;
+		top: -50px;
+		margin: 0;
+		color: $black;
+		opacity: 0.8;
+		font-weight: 500;
+	}
+}
+
+.blog-items {
+	color:$black;
+	padding-bottom: 11%;
+	text-align: center;
+
+	h5{
+		font-size: 20px;
+		color: $blue;
+		text-transform: uppercase;
+	}
+	p{	
+		font-size: 15px;
+		color: $black;
+	}
+	img {
+		margin:0 auto;
+	}
+}
+
+#feature{
+	overflow: hidden;
+	background: $blue;
+}
+
+.pencil {
+	margin: 0;
+	padding: 15% 0;
+	i{
+		float: left;
+		font-size: 100px;
+		line-height: 100px;
+	}
+	p{
+		padding: 10px 0 0 30%;
+		display: block;
+		opacity: 0.8;
+	}
+}
+
+#design {
+	background: url(../img/design-bg.png) no-repeat top center /cover;
+}
+
+.design{
+	margin: 9.1% 0;
+	width: 50%;
+	h3{
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	p{
+		display: block;
+		font-size: 16px;
+		line-height: 2;
+		opacity: 0.9;
+		margin: 10% 0;
+	}
+
+	a{
+		font-size: 14px;
+		display: block;
+		background: $blue;
+		text-decoration: none;
+		transition: 0.5s;
+		color: $main-color;
+		margin: 5% 0;
+		padding: 7px 10px;
+		text-transform: uppercase;
+		&:hover {
+			background: $main-color;
+			color: $blue;
+			transition: 0.5s;
+		}
+	}
+}
+
+.design-line-1 {
+	width: 70%;
+	&:hover {
+		width: 80%;
+	}
+}
+.design-line-2 {
+	width: 75%;
+	&:hover {
+		width: 80%;
+	}
+}
+.design-line-3 {
+	width: 80%;
+}
+
+.team-title {
+	text-align: center;
+	h3 {
+		font-size: 240px;
+		color: $black;
+		opacity: 0.2;
+		font-weight: 900;
+	}
+	h4 {
+		position: relative;
+		top: -200px;
+		color: $black;
+		font-weight: 500;
+		font-size: 35px;
+	}
+	p {
+		position: relative;
+		top: -70px;
+		font-size: 24px;
+		color: $black;
+		font-weight: 500;
+	}
+}
+
+.team-items {
+	position: relative;
+	top: -40px;
+	width: 80%;
+	margin: 0 auto 10%;
+	display: block;
+	background: #fff;
+	text-align: center;
+	font-weight: bold;
+	h5{
+		font-size: 20px;
+		color: $blue;
+		text-transform: uppercase;
+	}
+	p{	
+		font-size: 15px;
+		color: $black;
+	}
+	img {
+		margin:0 auto;
+	}
+
+}
+
+#form {
+	background: url(../img/form-bg.png) no-repeat top center /cover;
+}
+
+.form-title {
+	text-align: center;
+	margin: 5% 0 0;
+	h3 {
+		font-size: 240px;
+		color: $main-color;
+		opacity: 0.2;
+		font-weight: 500;
+	}
+	h4 {
+		text-transform: uppercase;
+		position: relative;
+		top: -200px;
+		color: $main-color;
+		font-weight: 500;
+		font-size: 35px;
+	}
+}
+
+.form {
+	padding-bottom: 5%;
+	input {
+		text-indent: 20px;
+		display: block;
+		background: transparent;
+		color: $main-color;
+		opacity: 0.3;
+		margin: 4px auto;
+		padding:5px 0;
+		width: 100%;
+		border-color: #main-color;
+		text-decoration: none;
+		transition: 0.5s;
+		&:hover{
+			opacity:1;
+			background: $black;
+			border-color: $blue;
+			transition: 0.5s;
+		}
+		&:focus{
+			opacity:1;
+			background: $black;
+			border-color: $blue;
+			transition: 0.5s;
+		}
+	}
+}
+
+.form-message {
+	margin: 5% 0;
+	input{
+		padding-bottom: 150px;
+	}
+}
+.button-submit {
+	padding: 5px;
+	width: 100px;
+	margin: 0 auto;
+	input {
+		text-indent: 0;
+		background: $main-color;
+		border-color: $main-color;
+		color: $blue;
+		&:hover {
+			cursor:pointer;
+			background: $blue;
+			color:$main-color;
+		}
+	}
+}
+#map {
+	display: block;
+	width: 100%;
+	iframe{
+		width: 102.1%;
+		position: relative;
+		left: -1%;
+		height: 300px;
+	}
+}
+
+footer {
+	padding: 30px 0;
+}
+
+.float {
+	float: right;
+}

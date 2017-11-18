@@ -1,0 +1,51 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media (max-width: 1200px) {
+  /* line 9, ../sass/print.scss */
+  .main-title h1 {
+    font-size: 100px;
+  }
+
+  /* line 13, ../sass/print.scss */
+  .menu-trigger {
+    display: block;
+  }
+
+  /* line 16, ../sass/print.scss */
+  top-menu {
+    display: block;
+    border-top: 1px #79896D solid;
+  }
+
+  /* line 20, ../sass/print.scss */
+  nav ul {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  /* line 27, ../sass/print.scss */
+  .main-title h1 {
+    font-size: 75px;
+  }
+
+  /* line 31, ../sass/print.scss */
+  .design {
+    width: 100%;
+  }
+}
+@media (max-width: 667px) {
+  /* line 38, ../sass/print.scss */
+  .main-title h1 {
+    display: block;
+    line-height: 8;
+    font-size: 40px;
+  }
+
+  /* line 44, ../sass/print.scss */
+  .design h3, p {
+    text-align: center;
+  }
+}
